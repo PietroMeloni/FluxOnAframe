@@ -4,6 +4,8 @@ function allowDrop(ev) {
 
 function drag(ev) {
     //number from string thenum = "foo3bar5".match(/\d+/)[0] // "3"
+    //UserAction.modelDragStart(ev.target);
+    console.log(ev.target);
     ev.dataTransfer.setData("itemIndex", parseInt(ev.target.htmlFor.match(/\d+/)[0]));
 
 
