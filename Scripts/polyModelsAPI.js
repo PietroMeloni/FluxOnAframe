@@ -22,7 +22,7 @@ function callSearchApi (offset, value) {
  */
 function searchPolyModels (value)
 {
-
+    console.log("working with require should work")
     var items;
 
     Promise.all([
@@ -50,7 +50,7 @@ function searchPolyModels (value)
         var dropdownImages = document.getElementById("image-dropdown");
         emptyDropdownList();
 
-        console.log(items[8]);
+
         items.forEach(function(_item, _index)
         {
             if(_index == 0)
